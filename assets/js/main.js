@@ -252,28 +252,74 @@ function initTiltCards() {
   });
 }
 
-/* ── CONTACT FORM ──────────────────────────────────────── */
+/* ── CONTACT FORM (Formsubmit.co — zero setup) ─────────── */
 function initContactForm() {
   const form = qs(".contact-form");
   if (!form) return;
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const button  = qs("button[type='submit']", form);
-    const oldText = button.textContent;
 
-    button.textContent = "Thanks — I'll be in touch ✓";
-    button.disabled    = true;
+    const button   = qs("button[type='submit']", form);
+    const status   = qs("#form-status");
+    const oldText  = button.textContent;
+    const nameVal  = qs("#contact-name", form).value.trim();
+    const emailVal = qs("#contact-email", form).value.trim();
+    const msgVal   = qs("#contact-message", form).value.trim();
 
-    if (hasGsap() && !prefersReduced) {
-      gsap.fromTo(button, { scale: 1 }, { scale: 1.04, duration: 0.2, yoyo: true, repeat: 1 });
+    /* Basic validation */
+    if (!nameVal || !emailVal || !msgVal) {
+      if (status) {
+        status.textContent = "Please fill in all fields.";
+        status.className   = "form-status form-status--error";
+      }
+      return;
     }
 
-    setTimeout(() => {
-      button.textContent = oldText;
-      button.disabled    = false;
-      form.reset();
-    }, 2500);
+    /* Show loading state */
+    button.textContent = "Sending...";
+    button.disabled    = true;
+    if (status) { status.textContent = ""; status.className = "form-status"; }
+
+    /* Send via Formsubmit AJAX */
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    })
+      .then((res) => {
+        if (res.ok) {
+          button.textContent = "Message Sent ✓";
+          if (status) {
+            status.textContent = "Your message has been sent! I'll get back to you soon.";
+            status.className   = "form-status form-status--success";
+          }
+          if (hasGsap() && !prefersReduced) {
+            gsap.fromTo(button, { scale: 1 }, { scale: 1.06, duration: 0.25, yoyo: true, repeat: 1 });
+          }
+          setTimeout(() => {
+            button.textContent = oldText;
+            button.disabled    = false;
+            form.reset();
+            if (status) { status.textContent = ""; status.className = "form-status"; }
+          }, 3500);
+        } else {
+          throw new Error("Server error");
+        }
+      })
+      .catch(() => {
+        button.textContent = "Oops, try again";
+        if (status) {
+          status.textContent = "Something went wrong. Please try again or email me at john.hemani786@gmail.com";
+          status.className   = "form-status form-status--error";
+        }
+        setTimeout(() => {
+          button.textContent = oldText;
+          button.disabled    = false;
+        }, 3000);
+      });
   });
 }
 
