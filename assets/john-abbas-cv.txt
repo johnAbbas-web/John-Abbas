@@ -1,0 +1,15 @@
+John Abbas
+Technical Consultant | Full Stack Software Engineer
+Company: Douzetech
+Location: Pakistan
+Email: john.irfan.am.2023@gmail.com
+
+Summary
+Full Stack Software Engineer and Technical Consultant experienced in enterprise applications, FinTech solutions, dashboard systems, analytics platforms, secure management systems, and database applications.
+
+Core Skills
+HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, Angular, React, Oracle Database, SQL, Firebase, REST APIs, Authentication Systems, Dashboard Development, Enterprise Applications, FinTech Systems, Data Analytics, UI/UX Development.
+
+Profiles
+GitHub: https://github.com/johnAbbas-web
+LinkedIn: https://www.linkedin.com/in/john-irfan-a234862a5

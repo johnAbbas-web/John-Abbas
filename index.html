@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Abbas — Technical Consultant at Douzetech. I build dashboards, fintech tools, and enterprise web apps." />
+  <meta name="author" content="John Abbas" />
+  <meta property="og:title" content="John Abbas | Technical Consultant" />
+  <meta property="og:description" content="Portfolio of John Abbas — dashboards, secure workflows, and database-backed products." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f0f4ff" />
+  <title>John Abbas | Technical Consultant</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/ja-logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/ja-logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/ja-logo.png" />
+  <link rel="shortcut icon" href="assets/images/ja-logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="page-loader__inner">
+      <img class="page-loader__logo" src="assets/images/ja-logo.png" alt="JA Logo" />
+      <div class="page-loader__bar"></div>
+    </div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div class="particles-container" aria-hidden="true" id="particles"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Glows -->
+  <div class="hero__glow"  aria-hidden="true"></div>
+  <div class="hero__glow2" aria-hidden="true"></div>
+
+  <!-- ─── HEADER ───────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="John Abbas home">
+      <img
+        class="brand__logo-img"
+        src="assets/images/ja-logo.png"
+        alt="John Abbas logo"
+        width="42"
+        height="42"
+      />
+      <span class="brand__text">
+        <strong class="brand__name">John Abbas</strong>
+        <span class="brand__tagline">Technical Consultant</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ─── MAIN ─────────────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero__content">
+        <p class="eyebrow hero-item">Technical Consultant · Douzetech · Pakistan</p>
+        <h1 class="hero__title hero-item">Hi, I'm <em id="hero-name">John Abbas</em>.</h1>
+        <p class="hero__role hero-item">I build <span id="typewriter-text" style="color: var(--accent); font-weight: 700;">Full Stack Applications</span><span class="typewriter-cursor"></span></p>
+        <p class="hero__tagline hero-item">
+          I build dashboards and internal tools for teams that need things to work reliably,
+          not just look good in a demo.
+        </p>
+        <div class="hero__actions hero-item">
+          <a class="btn btn-primary magnetic" href="#projects">See my work</a>
+          <a class="btn btn-soft magnetic" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost magnetic" href="mailto:john.irfan.am.2023@gmail.com">Email me</a>
+        </div>
+        <div class="social-row hero-item" aria-label="Social profiles">
+          <a class="icon-link magnetic" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="icon-link magnetic" href="https://www.linkedin.com/in/john-irfan-a234862a5" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="hero__aside">
+        <div class="intro-card tilt-card shimmer-on-hover">
+          <img
+            class="intro-card__logo"
+            src="assets/images/ja-logo.png"
+            alt="John Abbas logo"
+            width="70"
+            height="70"
+          />
+          <p class="intro-card__location">📍 Based in Pakistan</p>
+          <p class="intro-card__summary">
+            About 2.5 years shipping real products — cooling dashboards, case management systems,
+            and the usual mix of forms, reports, and API wiring.
+          </p>
+          <a class="intro-card__email" href="mailto:john.irfan.am.2023@gmail.com">
+            ✉ john.irfan.am.2023@gmail.com
+          </a>
+        </div>
+
+        <div class="interactive-terminal panel tilt-card shimmer-on-hover" style="margin-top: 20px; padding: 22px;">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">system_status.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="prompt">$</span> npm run dev</div>
+            <div class="terminal-line success">✔ Server running on port 3000</div>
+            <div class="terminal-line"><span class="prompt">$</span> fetch logs --source=OracleDB</div>
+            <div class="terminal-line info">✦ DB Connection active: POOL_SIZE=20</div>
+            <div class="terminal-line warning">⚡ Finastra API Status: Ready</div>
+            <div class="terminal-line info">📈 Live Transactions: <span id="live-tx-count">1,248</span>/sec</div>
+            <div class="live-chart-container">
+              <div class="live-chart-bar" style="height: 40%"></div>
+              <div class="live-chart-bar" style="height: 65%"></div>
+              <div class="live-chart-bar" style="height: 50%"></div>
+              <div class="live-chart-bar" style="height: 85%"></div>
+              <div class="live-chart-bar" style="height: 70%"></div>
+              <div class="live-chart-bar" style="height: 95%"></div>
+              <div class="live-chart-bar" style="height: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>I like turning vague requirements into software people can use every day.</h2>
+      </div>
+      <div class="about__grid">
+        <article class="panel about__copy reveal shimmer-on-hover">
+          <p>
+            I am a dedicated Full Stack Software Engineer and Technical Consultant with over 2.5 years of professional experience developing enterprise-grade web applications, FinTech solutions, real-time analytics dashboards, and secure database management systems.
+          </p>
+          <p>
+            I thrive in complex development environments, specialized in creating high-performance, user-centric platforms. My work centers on building scalable, reliable architectures using modern frameworks like Angular and React, paired with transactional database systems like Oracle Database and Firebase.
+          </p>
+          <p>
+            In addition to software development, I bring a solid understanding of UI/UX design, utilizing Adobe Photoshop (with 60-70% proficiency) to mock up, polish, and transition visual interfaces directly into functional, premium code.
+          </p>
+
+          <div class="about-capabilities">
+            <h3>Core Focus</h3>
+            <div class="capabilities-grid">
+              <div class="capability-item">
+                <span class="capability-icon">🛡️</span>
+                <div>
+                  <h4>Security-First Fintech</h4>
+                  <p>Integrating secure workflow operations, role-based audits, and API tokens.</p>
+                </div>
+              </div>
+              <div class="capability-item">
+                <span class="capability-icon">📈</span>
+                <div>
+                  <h4>Optimized Datapoints</h4>
+                  <p>Writing high-performance database queries and real-time visualization systems.</p>
+                </div>
+              </div>
+              <div class="capability-item">
+                <span class="capability-icon">🎨</span>
+                <div>
+                  <h4>UI/UX Design Alignment</h4>
+                  <p>Translating visual Photoshop mockups into pixel-perfect frontend framework code.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="stats-grid reveal stagger-group">
+          <div class="stat-card hover-lift shimmer-on-hover">
+            <strong>2.5+</strong>
+            <span>Years building products</span>
+          </div>
+          <div class="stat-card hover-lift shimmer-on-hover">
+            <strong>20+</strong>
+            <span>Projects shipped</span>
+          </div>
+          <div class="stat-card hover-lift shimmer-on-hover">
+            <strong>Angular &amp; React</strong>
+            <span>Day-to-day frontend</span>
+          </div>
+          <div class="stat-card hover-lift shimmer-on-hover">
+            <strong>Oracle &amp; SQL</strong>
+            <span>Where the data lives</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>What I reach for on a typical project.</h2>
+      </div>
+      <div class="skills__grid reveal">
+        <article class="panel skill-group tilt-card shimmer-on-hover">
+          <h3>Frontend</h3>
+          <ul class="tag-list stagger-group">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+            <li>Angular</li>
+            <li>React</li>
+          </ul>
+        </article>
+        <article class="panel skill-group tilt-card shimmer-on-hover">
+          <h3>Databases</h3>
+          <ul class="tag-list stagger-group">
+            <li>Oracle Database</li>
+            <li>SQL</li>
+            <li>Firebase</li>
+          </ul>
+        </article>
+        <article class="panel skill-group tilt-card shimmer-on-hover">
+          <h3>Other</h3>
+          <ul class="tag-list stagger-group">
+            <li>REST APIs</li>
+            <li>Dashboard Development</li>
+            <li>Enterprise Applications</li>
+            <li>FinTech Solutions</li>
+            <li>UI/UX Development</li>
+            <li>Adobe Photoshop</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've been working lately.</h2>
+      </div>
+      <div class="timeline-container stagger-group">
+        <article class="timeline-card panel reveal shimmer-on-hover">
+          <span class="timeline-card__date">2024 — Present</span>
+          <h3>Technical Consultant</h3>
+          <p class="timeline-card__company">Douzetech · ~2.5 Years</p>
+          <ul>
+            <li>FinTech development with Finastra and Finexcore based solutions (1.5+ years of FinTech experience).</li>
+            <li>Developed banking modules and secure corporate client banking workflows.</li>
+            <li>Designed and integrated Oracle, SQL, and Firebase database solutions.</li>
+            <li>Implemented authentication, reporting, analytics, and management systems.</li>
+            <li>Collaborated with teams to deliver scalable and secure enterprise applications.</li>
+          </ul>
+        </article>
+        <article class="timeline-card panel reveal shimmer-on-hover">
+          <span class="timeline-card__date">2023 — 2024</span>
+          <h3>Customer Operations Executive</h3>
+          <p class="timeline-card__company">MARS BPO (Call Center)</p>
+          <ul>
+            <li>Managed customer communications and resolved client inquiries.</li>
+            <li>Maintained high quality standards and collaborated with internal teams.</li>
+          </ul>
+        </article>
+        <article class="timeline-card panel reveal shimmer-on-hover">
+          <span class="timeline-card__date">2022 — 2023</span>
+          <h3>Sales Associate</h3>
+          <p class="timeline-card__company">DNX Sales Company</p>
+          <ul>
+            <li>Engaged prospective clients and managed customer communication pipelines.</li>
+            <li>Tracked sales metrics and reported client feedback to product teams.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>A couple of things I've shipped recently.</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--coolshift" aria-label="CoolShift dashboard and login screenshots">
+            <figure class="shot-frame shot-frame--main">
+              <span>Live Dashboard</span>
+              <img class="project-shot" src="assets/images/coolshift-dashboard.png" alt="CoolShift optimization dashboard screenshot" loading="lazy" />
+            </figure>
+            <figure class="shot-frame shot-frame--floating">
+              <span>Login Flow</span>
+              <img class="project-shot" src="assets/images/coolshift-login.png" alt="CoolShift login screen screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>CoolShift — cooling optimization dashboard</h3>
+            <p>
+              A tool for tracking live room data, importing energy spreadsheets, and comparing
+              optimization runs. Helps facilities teams see cost and carbon impact without digging
+              through raw CSV files.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>Angular</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>CSV / XLSX imports</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--banking" aria-label="Core Banking dashboard screenshot">
+            <figure class="shot-frame shot-frame--main" style="right: 18px;">
+              <span>Fintech Dashboard</span>
+              <img class="project-shot" src="assets/images/banking.png" alt="Core Banking Modules dashboard screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>Core Banking Modules</h3>
+            <p>
+              FinTech integrations built with Finastra and Finexcore standards. Designed secure corporate internet banking, transaction monitoring workflows, and high-performance financial data engines.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>Angular</li>
+              <li>Finastra</li>
+              <li>Oracle SQL</li>
+              <li>Security Modules</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--crime" aria-label="Crime Management System login and dashboard screenshots">
+            <figure class="shot-frame shot-frame--main">
+              <span>Admin Dashboard</span>
+              <img class="project-shot" src="assets/images/crime-dashboard.png" alt="Crime Management System admin dashboard screenshot" loading="lazy" />
+            </figure>
+            <figure class="shot-frame shot-frame--floating">
+              <span>Secure Login</span>
+              <img class="project-shot" src="assets/images/crime-login.png" alt="Crime Management System login screen screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>Crime Management System</h3>
+            <p>
+              Role-based admin app for FIR records, complaints, case tracking, and audit logs.
+              Built for desk staff who need quick search, clear status views, and reporting
+              without fighting the UI.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>React</li>
+              <li>Bootstrap</li>
+              <li>Firebase</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--building" aria-label="Building Management System screenshot">
+            <figure class="shot-frame shot-frame--main" style="right: 18px;">
+              <span>IoT Command Center</span>
+              <img class="project-shot" src="assets/images/building.png" alt="Building Management System dashboard screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>Building Management System</h3>
+            <p>
+              Enterprise control panel for building automation systems. Handles real-time monitoring of room temperatures, facility resource optimization, IoT device management, and scheduled analytics reporting.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>React</li>
+              <li>Tailwind CSS</li>
+              <li>REST APIs</li>
+              <li>IoT WebSockets</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--pos" aria-label="POS System screenshot">
+            <figure class="shot-frame shot-frame--main" style="right: 18px;">
+              <span>Checkout Terminal</span>
+              <img class="project-shot" src="assets/images/pos.png" alt="POS System terminal screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>Retail POS (Point of Sale) System</h3>
+            <p>
+              Point of Sale application with checkout grid, inventory management, discount calculations, and automated digital receipt generators. Built to optimize retail checkout workflows.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>Angular</li>
+              <li>SQL</li>
+              <li>Firebase Auth</li>
+              <li>Reports Engine</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card panel reveal tilt-card">
+          <div class="project-preview has-screenshots screenshot-stage screenshot-stage--courier" aria-label="Courier Service Management screenshot">
+            <figure class="shot-frame shot-frame--main" style="right: 18px;">
+              <span>Logistics Portal</span>
+              <img class="project-shot" src="assets/images/courier.png" alt="Courier Service Management System screenshot" loading="lazy" />
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <h3>Courier &amp; Logistics Management System</h3>
+            <p>
+              Logistics tracking application showing active delivery routes, shipping progress timelines, driver profiles, order assignments, and analytics reports.
+            </p>
+            <ul class="tag-list tag-list--inline stagger-group">
+              <li>React</li>
+              <li>Leaflet Map</li>
+              <li>Oracle DB</li>
+              <li>REST APIs</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-small btn-ghost" href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">Code on GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Happy to help with.</h2>
+      </div>
+      <div class="service-grid stagger-group">
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">💻</div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end web applications built with modern frontend frameworks (Angular, React) and robust backends.</p>
+        </article>
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">📊</div>
+          <h3>Dashboards &amp; Analytics</h3>
+          <p>Interactive data visualization, reporting engines, live metric monitoring, data filters, and spreadsheet exports.</p>
+        </article>
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">🗄️</div>
+          <h3>Database Engineering</h3>
+          <p>Relational database schemas, queries optimization, data security rules, and integration (Oracle SQL, Firebase).</p>
+        </article>
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">🔌</div>
+          <h3>API Integration</h3>
+          <p>Designing, implementing, and securing RESTful APIs to cleanly connect interfaces with server data pipelines.</p>
+        </article>
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">✨</div>
+          <h3>UI/UX Polish</h3>
+          <p>Optimizing page spacing, visual hierarchy, user flow transitions, and responsive behaviors for a premium look.</p>
+        </article>
+        <article class="service-card panel reveal shimmer-on-hover">
+          <div class="service-card__icon">🤝</div>
+          <h3>Technical Consulting</h3>
+          <p>Collaborating on scoping documents, project architectural designs, code reviews, and solution planning.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="contact__grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Got something in mind? I'd like to hear about it.</h2>
+          <div class="contact-card panel shimmer-on-hover">
+            <p><strong>John Abbas</strong></p>
+            <p>Technical Consultant, Douzetech</p>
+            <p>Pakistan</p>
+            <a href="mailto:john.irfan.am.2023@gmail.com">john.irfan.am.2023@gmail.com</a>
+            <a href="https://github.com/johnAbbas-web" target="_blank" rel="noreferrer">github.com/johnAbbas-web</a>
+            <a href="https://www.linkedin.com/in/john-irfan-a234862a5" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form panel reveal tilt-card" id="contact-form">
+          <label>
+            <span>Your name</span>
+            <input id="contact-name" type="text" name="name" placeholder="Alex" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="contact-email" type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            <span>What's the project?</span>
+            <textarea id="contact-message" name="message" rows="5" placeholder="A few sentences about what you need — timeline, stack, whatever helps."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit" id="contact-submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Built with care by <span>John Abbas</span> · Technical Consultant · Building Solutions, Delivering Impact</p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top magnetic" type="button" aria-label="Back to top" id="back-to-top">↑</button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
