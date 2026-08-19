@@ -12,4 +12,4 @@ HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, Angular, React, Oracle Databas
 
 Profiles
 GitHub: https://github.com/johnAbbas-web
-LinkedIn: https://www.linkedin.com/in/john-irfan-a234862a5
+LinkedIn: https://www.linkedin.com/in/john-abbas-a234862a5
